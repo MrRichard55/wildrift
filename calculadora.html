@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Wild Rift</title>
+    <link rel="stylesheet" href="/practicas/css/estilocalculadora.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Wild Rift</h1>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Inicio</a>
+                <a href="reloj.html" class="nav-link">Reloj</a>
+                <a href="calculadora.html" class="nav-link active">Calculadora</a>
+                <a href="campeones.html" class="nav-link">Campeones</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="calculator-container">
+            <div class="game-info">
+                <h2>Calculadora de Daño</h2>
+                <div class="game-tip" id="gameTip"></div>
+            </div>
+            
+            <div class="calculator-display">
+                <input type="text" id="display" readonly>
+            </div>
+            
+            <div class="calculator-buttons">
+                <button class="calc-btn operator" data-value="AC">AC</button>
+                <button class="calc-btn operator" data-value="DEL">DEL</button>
+                <button class="calc-btn operator" data-value="%">%</button>
+                <button class="calc-btn operator" data-value="/">/</button>
+                
+                <button class="calc-btn" data-value="7">7</button>
+                <button class="calc-btn" data-value="8">8</button>
+                <button class="calc-btn" data-value="9">9</button>
+                <button class="calc-btn operator" data-value="*">×</button>
+                
+                <button class="calc-btn" data-value="4">4</button>
+                <button class="calc-btn" data-value="5">5</button>
+                <button class="calc-btn" data-value="6">6</button>
+                <button class="calc-btn operator" data-value="-">-</button>
+                
+                <button class="calc-btn" data-value="1">1</button>
+                <button class="calc-btn" data-value="2">2</button>
+                <button class="calc-btn" data-value="3">3</button>
+                <button class="calc-btn operator" data-value="+">+</button>
+                
+                <button class="calc-btn" data-value="0">0</button>
+                <button class="calc-btn" data-value=".">.</button>
+                <button class="calc-btn special" data-value="=">=</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Wild Rift. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="/practicas/java/scriptcalculadora.js"></script>
+</body>
+</html>

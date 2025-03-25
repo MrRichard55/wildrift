@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wild Rift - Inicio de Sesión</title>
+    <link rel="stylesheet" href="/practicas/css/estilologin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
+</head>
+<body>
+    <!-- Fondo 3D -->
+    <div id="scene3d"></div>
+
+    <!-- Contenido principal -->
+    <div class="login-container">
+        <header class="login-header">
+            <h1 class="logo" data-tilt data-tilt-glare data-tilt-max-glare="0.2">WILD RIFT</h1>
+            <p class="subtitle">INICIO DE SESIÓN</p>
+        </header>
+
+        <main class="login-main">
+            <div class="login-card" data-tilt data-tilt-glare data-tilt-max-glare="0.1">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <form class="login-form">
+                            <div class="form-group">
+                                <label for="username"><i class="fas fa-user"></i> Nombre de Invocador</label>
+                                <input type="text" id="username" placeholder="Ej: AhriMaster" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password"><i class="fas fa-lock"></i> Contraseña</label>
+                                <input type="password" id="password" placeholder="••••••••" required>
+                            </div>
+                            <div class="form-options">
+                                <label class="remember">
+                                    <input type="checkbox"> Recordarme
+                                </label>
+                                <a href="#" class="forgot">¿Olvidaste tu contraseña?</a>
+                            </div>
+                            <button type="submit" class="login-btn">INVOCAR <i class="fas fa-chevron-right"></i></button>
+                        </form>
+                    </div>
+                    <div class="card-back">
+                        <div class="back-content">
+                            <h3>¿NUEVO EN WILD RIFT?</h3>
+                            <p>Únete a la batalla y comienza tu leyenda</p>
+                            <a href="register.html" class="register-btn">REGISTRARSE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="social-login">
+                <p>O inicia sesión con:</p>
+                <div class="social-buttons">
+                    <a href="#" class="social-btn" data-tilt><i class="fab fa-google"></i></a>
+                    <a href="#" class="social-btn" data-tilt><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-btn" data-tilt><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </main>
+
+        <footer class="login-footer">
+            <p>© 2023 Wild Rift. Todos los derechos reservados.</p>
+            <div class="footer-links">
+                <a href="#">Términos de Servicio</a>
+                <a href="#">Política de Privacidad</a>
+                <a href="#">Soporte</a>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Efectos de partículas -->
+    <div class="particles" id="particles-js"></div>
+
+    <script src="/practicas/java/login.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</body>
+</html>

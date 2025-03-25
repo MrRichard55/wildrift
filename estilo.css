@@ -1,0 +1,75 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    max-width: 800px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #ffcccb; /* Rosa pastel */
+    color: #333;
+    font-weight: bold;
+}
+
+td {
+    color: #333;
+}
+
+.matematicas {
+    background-color: #c8e6c9; /* Verde pastel */
+}
+
+.ingles {
+    background-color: #ffcccb; /* Rosa pastel */
+}
+
+.biologia {
+    background-color: #b2ebf2; /* Azul claro pastel */
+}
+
+.programacion {
+    background-color: #fff9c4; /* Amarillo pastel */
+}
+
+.base-de-datos {
+    background-color: #e1bee7; /* Morado pastel */
+}
+
+.arte {
+    background-color: #ffcdd2; /* Rosa claro pastel */
+}
+
+.fisica {
+    background-color: #bbdefb; /* Azul pastel */
+}
+
+tr:hover td {
+    opacity: 0.8;
+}
+
+caption {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: bold;
+}

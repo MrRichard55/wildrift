@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wild Rift - Hub Principal</title>
+    <link rel="stylesheet" href="/practicas/css/estiloprincipal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Menú 3D -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo" data-tilt>Wild Rift</h1>
+            <nav class="nav">
+                <a href="#inicio" class="nav-link active" data-tilt>Inicio</a>
+                <a href="#reloj" class="nav-link" data-tilt>Reloj</a>
+                <a href="#calculadora" class="nav-link" data-tilt>Calculadora</a>
+                <a href="#agencia" class="nav-link" data-tilt>Agencia</a>
+                <a href="#3d" class="nav-link" data-tilt>Experiencia 3D</a>
+                <a href="login.html" class="nav-link" data-tilt>Login</a>
+            </nav>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección de Bienvenida -->
+    <section class="hero" id="inicio">
+        <div class="container">
+            <h2 class="hero-title">Bienvenido a Wild Rift</h2>
+            <p class="hero-text">Tu centro de recursos para dominar el juego</p>
+            <div class="quick-access">
+                <a href="#reloj" class="quick-card" data-tilt>
+                    <i class="fas fa-clock"></i>
+                    <span>Reloj</span>
+                </a>
+                <a href="#calculadora" class="quick-card" data-tilt>
+                    <i class="fas fa-calculator"></i>
+                    <span>Calculadora</span>
+                </a>
+                <a href="#agencia" class="quick-card" data-tilt>
+                    <i class="fas fa-car"></i>
+                    <span>Agencia</span>
+                </a>
+                <a href="#3d" class="quick-card" data-tilt>
+                    <i class="fas fa-cube"></i>
+                    <span>3D</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección del Reloj -->
+    <section class="section-clock" id="reloj">
+        <div class="container">
+            <h2 class="section-title">Reloj con Frases</h2>
+            <div class="clock-container">
+                <div class="date" id="fecha"></div>
+                <div class="time" id="hora"></div>
+                <div class="champion-quote">
+                    <i class="fas fa-quote-left"></i>
+                    <span id="frase"></span>
+                    <i class="fas fa-quote-right"></i>
+                    <div class="champion-name" id="campeon"></div>
+                </div>
+            </div>
+            <a href="reloj.html" class="section-button">Ver Reloj Completo</a>
+        </div>
+    </section>
+
+    <!-- Sección de Calculadora -->
+    <section class="section-calculator" id="calculadora">
+        <div class="container">
+            <h2 class="section-title">Calculadora de Daño</h2>
+            <div class="calculator-preview">
+                <div class="calculator-display">
+                    <input type="text" value="0" readonly>
+                </div>
+                <div class="calculator-buttons">
+                    <button>7</button>
+                    <button>8</button>
+                    <button>9</button>
+                    <button class="operator">/</button>
+                    <button>4</button>
+                    <button>5</button>
+                    <button>6</button>
+                    <button class="operator">*</button>
+                    <button>1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button class="operator">-</button>
+                    <button>0</button>
+                    <button>.</button>
+                    <button class="special">=</button>
+                    <button class="operator">+</button>
+                </div>
+            </div>
+            <a href="calculadora.html" class="section-button">Ir a Calculadora Completa</a>
+        </div>
+    </section>
+
+    <!-- Sección de Agencia -->
+    <section class="section-agency" id="agencia">
+        <div class="container">
+            <h2 class="section-title">Agencia de Coches</h2>
+            <div class="agency-highlights">
+                <div class="car-card" data-tilt>
+                    <img src="https://images.unsplash.com/photo-1494972308805-463bc619d34e" alt="Audi R8">
+                    <h3>Audi R8 V10 Plus</h3>
+                    <div class="car-price">€189,900</div>
+                </div>
+                <div class="car-card" data-tilt>
+                    <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e" alt="Porsche 911">
+                    <h3>Porsche 911 Turbo S</h3>
+                    <div class="car-price">€215,000</div>
+                </div>
+            </div>
+            <a href="agencia.html" class="section-button">Ver Catálogo Completo</a>
+        </div>
+    </section>
+
+    <!-- Sección 3D -->
+    <section class="section-3d" id="3d">
+        <div class="container">
+            <h2 class="section-title">Experiencia 3D</h2>
+            <div class="d3-showcase">
+                <div class="d3-card" data-tilt data-tilt-scale="1.05">
+                    <div class="d3-card-inner">
+                        <div class="d3-card-front">
+                            <img src="https://images.contentstack.io/v3/assets/blt370612131b6e0756/blt7d427a0a0d6f5e5a/5f7f6f5f8fcc6d0f1e3c4f3c/ahri_skin.jpg" alt="Ahri">
+                        </div>
+                        <div class="d3-card-back">
+                            <h3>AHRI</h3>
+                            <p>Asesina Mágica</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="3d.html" class="section-button">Ver Experiencia Completa</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Wild Rift Hub</h3>
+                    <p>Centro de recursos para jugadores de League of Legends: Wild Rift</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Horario</h3>
+                    <p><i class="fas fa-clock"></i> Lunes-Viernes: 9:00 - 20:00</p>
+                    <p><i class="fas fa-clock"></i> Sábados: 10:00 - 18:00</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Enlaces Rápidos</h3>
+                    <a href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a>
+                    <a href="#inicio"><i class="fas fa-home"></i> Inicio</a>
+                    <a href="#reloj"><i class="fas fa-clock"></i> Reloj</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Wild Rift Hub. Todos los derechos reservados.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
+    <script src="/practicas/java/principal.js"></script>
+</body>
+</html>
